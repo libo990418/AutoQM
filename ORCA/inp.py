@@ -4,8 +4,10 @@ import os
 import re
 
 cmd = "wB97X-D3 def2-QZVP Opt Freq"
-dir = input('Directory: ')
-os.chdir(dir)
+
+print("This program generates orca .inp files from all .gjf files in a given folder")
+folder = input(' Folder: ')
+os.chdir(folder)
 jobs = [fn.replace('.gjf', '') for fn in os.listdir() if fn.endswith('.gjf')]
 
 for job in jobs:

@@ -1,3 +1,5 @@
+""" generate orca .inp files from all .gjf files in a given folder """
+
 import os
 import re
 
